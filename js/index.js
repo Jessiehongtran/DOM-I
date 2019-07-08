@@ -40,3 +40,59 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const header = document.querySelectorAll("nav a");
+header[0].textContent = siteContent["nav"]["nav-item-1"];
+header[1].textContent = siteContent["nav"]["nav-item-2"];
+header[2].textContent = siteContent["nav"]["nav-item-3"];
+header[3].textContent = siteContent["nav"]["nav-item-4"];
+header[4].textContent = siteContent["nav"]["nav-item-5"];
+header[5].textContent = siteContent["nav"]["nav-item-6"];
+
+const headerAdded = document.createElement("a");
+console.log(headerAdded)
+headerAdded.textContent = "Blog";
+headerAdded.style.color = "red";
+const headerNav = document.querySelector("nav")
+console.log(headerNav)
+headerNav.appendChild(headerAdded);
+
+const tagline = document.querySelector(".cta-text");
+tagline.textContent = siteContent["cta"]["h1"]
+
+// const button = document.querySelector("button");
+// console.log(button)
+
+const button = document.createElement("button");
+console.log(button);
+button.textContent = "Get Started";
+tagline.appendChild(button)
+
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+const title = document.querySelectorAll("h4");
+title[0].textContent = siteContent["main-content"]["features-h4"];
+title[1].textContent = siteContent["main-content"]["about-h4"];
+title[2].textContent = siteContent["main-content"]["services-h4"];
+title[3].textContent = siteContent["main-content"]["product-h4"];
+title[4].textContent = siteContent["main-content"]["vision-h4"];
+title[5].textContent = siteContent["contact"]["contact-h4"];
+
+const text = document.querySelectorAll("p");
+text[0].textContent = siteContent["main-content"]["features-content"];
+text[1].textContent = siteContent["main-content"]["about-content"];
+text[2].textContent = siteContent["main-content"]["services-content"];
+text[3].textContent = siteContent["main-content"]["product-content"];
+text[4].textContent = siteContent["main-content"]["vision-content"];
+text[5].textContent = siteContent["contact"]["address"];
+text[6].textContent = siteContent["contact"]["phone"];
+text[7].textContent = siteContent["contact"]["email"];
+
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
+

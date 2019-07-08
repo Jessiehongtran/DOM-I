@@ -65,7 +65,7 @@ title[1].textContent = siteContent["main-content"]["about-h4"];
 title[2].textContent = siteContent["main-content"]["services-h4"];
 title[3].textContent = siteContent["main-content"]["product-h4"];
 title[4].textContent = siteContent["main-content"]["vision-h4"];
-title[5].textContent = siteContent["main-content"]["contact-h4"];
+title[5].textContent = siteContent["contact"]["contact-h4"];
 
 const text = document.querySelectorAll("p");
 text[0].textContent = siteContent["main-content"]["features-content"];
@@ -73,7 +73,12 @@ text[1].textContent = siteContent["main-content"]["about-content"];
 text[2].textContent = siteContent["main-content"]["services-content"];
 text[3].textContent = siteContent["main-content"]["product-content"];
 text[4].textContent = siteContent["main-content"]["vision-content"];
-text[5].textContent = siteContent["main-content"]["contact-content"];
+text[5].textContent = siteContent["contact"]["address"];
+text[6].textContent = siteContent["contact"]["phone"];
+text[7].textContent = siteContent["contact"]["email"];
 
 const middleImage = document.getElementById("middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];

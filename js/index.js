@@ -49,12 +49,22 @@ header[3].textContent = siteContent["nav"]["nav-item-4"];
 header[4].textContent = siteContent["nav"]["nav-item-5"];
 header[5].textContent = siteContent["nav"]["nav-item-6"];
 
+const headerAdded = document.createElement("a");
+console.log(headerAdded)
+headerAdded.textContent = "Blog";
+headerAdded.style.color = "red";
+const headerNav = document.querySelector("nav")
+console.log(headerNav)
+headerNav.appendChild(headerAdded);
+
 const tagline = document.querySelector(".cta-text");
 tagline.textContent = siteContent["cta"]["h1"]
 
-const button = document.createElement("button");
-// button.textContent = siteContent["cta"]["button"]
+// const button = document.createElement("button");
+// console.log(button);
+// button.textContent = "Get Started";
 // button.className = "cta-text button";
+
 
 let ctaImage = document.getElementById("cta-img");
 ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
@@ -82,3 +92,4 @@ middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
 const footer = document.querySelector("footer p");
 footer.textContent = siteContent["footer"]["copyright"];
+

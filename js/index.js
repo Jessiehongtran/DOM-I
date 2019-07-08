@@ -60,10 +60,13 @@ headerNav.appendChild(headerAdded);
 const tagline = document.querySelector(".cta-text");
 tagline.textContent = siteContent["cta"]["h1"]
 
-// const button = document.createElement("button");
-// console.log(button);
-// button.textContent = "Get Started";
-// button.className = "cta-text button";
+// const button = document.querySelector("button");
+// console.log(button)
+
+const button = document.createElement("button");
+console.log(button);
+button.textContent = "Get Started";
+tagline.appendChild(button)
 
 
 let ctaImage = document.getElementById("cta-img");

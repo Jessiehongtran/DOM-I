@@ -53,4 +53,27 @@ const tagline = document.querySelector(".cta-text");
 tagline.textContent = siteContent["cta"]["h1"]
 
 const button = document.createElement("button");
-button.innerText = siteContent["cta"]["button"]
+// button.textContent = siteContent["cta"]["button"]
+// button.className = "cta-text button";
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"])
+
+const title = document.querySelectorAll("h4");
+title[0].textContent = siteContent["main-content"]["features-h4"];
+title[1].textContent = siteContent["main-content"]["about-h4"];
+title[2].textContent = siteContent["main-content"]["services-h4"];
+title[3].textContent = siteContent["main-content"]["product-h4"];
+title[4].textContent = siteContent["main-content"]["vision-h4"];
+title[5].textContent = siteContent["main-content"]["contact-h4"];
+
+const text = document.querySelectorAll("p");
+text[0].textContent = siteContent["main-content"]["features-content"];
+text[1].textContent = siteContent["main-content"]["about-content"];
+text[2].textContent = siteContent["main-content"]["services-content"];
+text[3].textContent = siteContent["main-content"]["product-content"];
+text[4].textContent = siteContent["main-content"]["vision-content"];
+text[5].textContent = siteContent["main-content"]["contact-content"];
+
+const middleImage = document.getElementById("middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"])
